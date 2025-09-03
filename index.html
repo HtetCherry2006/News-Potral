@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="m-0 p-0">
+    <div class="container-fluid m-0 p-0">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-warning" href="#">NewsPortal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><button class="nav-link btn btn-link" id="general">General</button></li>
+                        <li class="nav-item"><button class="nav-link btn btn-link" id="business">Business</button></li>
+                        <li class="nav-item"><button class="nav-link btn btn-link" id="sports">Sports</button></li>
+                        <li class="nav-item"><button class="nav-link btn btn-link" id="technology">Technology</button></li>
+                        
+                    </ul>
+                   
+
+                    <form class="d-flex" role="search" onsubmit="return false;">
+                        <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+         
+        <!-- News Section -->
+        <div class="container mt-4">
+            <div id="newsType" class="mb-3"><h4>Headlines</h4></div>
+            <div class="row g-3" id="newsdetails"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light pt-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-md-3 mb-4">
+                        <h2>NewsPortal</h2>
+                        <p>Your trusted source for breaking news, updates, and in-depth analysis from around the world.</p>
+                    </div>
+                    <!-- Categories Section -->
+                    <div class="col-md-3 mb-4">
+                        <h3>Categories</h3>
+                        <ul class="list-unstyled">
+                            <li><button class="text-light text-decoration-none btn btn-link" id="generalFooter">General</button></li>
+                            <li><button class="text-light text-decoration-none btn btn-link" id="technologyFooter">Technology</button></li>
+                            <li><button class="text-light text-decoration-none btn btn-link" id="businessFooter">Business</button></li>
+                           <li><button class="text-light text-decoration-none btn btn-link" id="sportsFooter">Sports</button></li>
+                           <li><button class="text-light text-decoration-none btn btn-link" id="entertainmentFooter">Entertainment</button></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Section -->
+                    <div class="col-md-3 mb-4">
+                        <h3>Contact</h3>
+                        <p>Email: contact@newsportal.com</p>
+                        <p>Phone: +123 456 7890</p>
+                        <p>Address: 123 News Street, Media City</p>
+                    </div>
+                    <!-- Newsletter Section -->
+                    <div class="col-md-3 mb-4">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to get the latest news updates.</p>
+                        <form onsubmit="return false;">
+                            <input type="email" class="form-control mb-2" id="newsletterEmail" placeholder="Your email" required>
+                            <button type="button" class="btn btn-warning w-100" id="submit-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-center py-3 border-top border-secondary mt-4">
+                    &copy; 2025 NewsPortal. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+     <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-warning">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title fw-bold" id="authModalLabel">⚠ Access Restricted</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="mb-0">You must <strong>Log In</strong> or <strong>Sign Up</strong> to read the full article.</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a href="login.html" class="btn btn-outline-warning">Log In</a>
+        <a href="signup.html" class="btn btn-warning text-dark fw-bold">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+     <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>

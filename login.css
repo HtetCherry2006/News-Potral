@@ -1,0 +1,58 @@
+/* style.css */
+
+/* Body background */
+body {
+    background: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background: #ffffff;
+}
+
+/* Form labels */
+.form-label {
+    font-weight: 600;
+}
+
+/* Input fields */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Login button */
+.btn-primary {
+    border-radius: 8px;
+    padding: 10px 0;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Sign-up link */
+.text-center a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.text-center a:hover {
+    color: #cc7a00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+.signup-card {
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.signup-card h3 {
+    color: #ffbb33;
+    font-weight: bold;
+}
+
+.signup-card .form-control:focus {
+    border-color: #ffbb33;
+    box-shadow: 0 0 5px #ffbb33;
+}
+
+.signup-card .btn-warning {
+    background-color: #ffbb33;
+    border: none;
+    font-weight: bold;
+}
+
+.signup-card .btn-warning:hover {
+    background-color: #ffaa00;
+}
+.signup-card a {
+    color: #ff9900;
+    text-decoration: none;
+}
